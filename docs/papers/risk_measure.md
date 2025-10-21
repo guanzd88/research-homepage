@@ -1,4 +1,5 @@
-# Process Description: Risk Text Extraction and Information Entropy Calculation
+# Process Description: The Information Entropy of Acquisition Report: a ChatGPT-based Measure
+
 
 This document describes the complete process of filtering, extracting, and quantifying risk-related information from M&A announcements using information entropy.
 
