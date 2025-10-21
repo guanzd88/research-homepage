@@ -1,0 +1,80 @@
+site_name: Your Name — Research
+site_description: Personal homepage & paper appendix
+site_url: https://<your-username>.github.io/research-homepage/
+
+repo_url: https://github.com/<your-username>/research-homepage
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Papers:
+      - Appendix: papers/appendix.md
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
+    - search.suggest
+    - search.highlight
+    - header.autohide
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.highlight:
+      anchor_linenums: true
+      linenums: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+  - tables
+  - footnotes
+  - attr_list
+  - def_list
+  - pymdownx.arithmatex:
+      generic: true
+
+plugins:
+  - search
+  - glightbox
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid@10.9.1/dist/mermaid.min.js
+extra_css:
+  - https://unpkg.com/mermaid@10.9.1/dist/mermaid.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/<your-username>
+    - icon: fontawesome/brands/google-scholar
+      link: https://scholar.google.com/citations?user=<your-scholar-id>
+  consent:
+    title: Cookies
+    description: This site uses cookies for basic analytics.
