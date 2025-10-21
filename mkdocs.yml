@@ -7,9 +7,7 @@ edit_uri: edit/main/docs/
 
 nav:
   - Home: index.md
-  - About: about.md
   - Papers:
-      - Appendix: papers/appendix.md
 
 theme:
   name: material
