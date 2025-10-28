@@ -51,7 +51,7 @@ You are tasked with performing the following actions on the given text:
 ---
 
 ## 2. Example of Risk Text Extraction
-
+```json
 {
 "background": "Announcement of the resolutions of the 2nd Board of Directors' 3rd meeting of Shanghai Jahwa United Co., Ltd., involving the notice of convening the 2002 annual general meeting of shareholders and the decision to change the use of raised funds.",
 "stkcd": null,
@@ -67,7 +67,7 @@ You are tasked with performing the following actions on the given text:
 ],
 "announcement_no": "Lin 2003-010"
 }
-
+```
 ---
 
 ## 3. Python Function for Entropy Calculation
