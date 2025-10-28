@@ -1,13 +1,6 @@
-# Process Description: The Information Entropy of Acquisition Report: a ChatGPT-based Measure
+# Appendix B: Title Filtering (Relevance Determination)
 
-
-This document describes the complete process of filtering, extracting, and quantifying risk-related information from M&A announcements using information entropy.
-
----
-
-## 1. Title Filtering (Relevance Determination)
-
-First, with the following prompt, irrelevant announcements will be removed:
+With the following prompt, irrelevant announcements will be removed:
 
 
 You now need to analyze a given title. The analysis criteria are:
@@ -22,12 +15,11 @@ You now need to analyze a given title. The analysis criteria are:
    Given title:
    {given_title}
 
+# Appendix C:Process Description: The Information Entropy of Acquisition Report: a ChatGPT-based Measure
 
----
+## 1. Risk Text Extraction (From M&A Announcements)
 
-## 2. Risk Text Extraction (From M&A Announcements)
-
-Secondly, this prompt is used to extract risk text from M&A announcements:
+This prompt is used to extract risk text from M&A announcements:
 
 You are tasked with performing the following actions on the given text:
 
@@ -58,7 +50,7 @@ You are tasked with performing the following actions on the given text:
 
 ---
 
-## 3. Example of Risk Text Extraction
+## 2. Example of Risk Text Extraction
 
 {
 "background": "Announcement of the resolutions of the 2nd Board of Directors' 3rd meeting of Shanghai Jahwa United Co., Ltd., involving the notice of convening the 2002 annual general meeting of shareholders and the decision to change the use of raised funds.",
@@ -78,7 +70,7 @@ You are tasked with performing the following actions on the given text:
 
 ---
 
-## 4. Python Function for Entropy Calculation
+## 3. Python Function for Entropy Calculation
 
 ```Python
 def cal_entropy(json_file):
@@ -120,7 +112,7 @@ def cal_entropy(json_file):
 ```
 ---
 
-## 5. Result Table: Information Entropy Index of Risk Sentences
+## 4. Result Table: Information Entropy Index of Risk Sentences
 Then we get the table below which summarizes the information entropy index of risk related sentences.
 
 | Sentence                                                                                                                             | Information Entropy |
@@ -132,6 +124,6 @@ Then we get the table below which summarizes the information entropy index of ri
 | This transaction does not involve personnel placement or arrangements for intangible assets, which may affect subsequent operations. |    4.72004996064481 |
 | If either party fails to fulfill the contractual agreement, it must bear reasonable costs and expenses.                              |    4.43660543431788 |
 
-## 6. Risk Level Measurement
+## 5. Risk Level Measurement
 Finally, we take the **minimum information entropy** as the risk level measurement.
 For the above example, the minimum entropy value is **4.26**, representing the overall risk level.
