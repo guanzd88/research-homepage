@@ -125,5 +125,5 @@ Then we get the table below which summarizes the information entropy index of ri
 | If either party fails to fulfill the contractual agreement, it must bear reasonable costs and expenses.                              |    4.43660543431788 |
 
 ## 5. Risk Level Measurement
-Finally, we take the **minimum information entropy** as the risk level measurement.
-For the above example, the minimum entropy value is **4.26**, representing the overall risk level.
+Finally, we take the minimum information entropy as the risk level measurement.
+For the above example, the minimum entropy value is 4.26, representing the overall risk level.
